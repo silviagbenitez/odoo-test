@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Odoo: Development done right</title>
+    </head>
+    <body>
+        <header class="bg-primary d-xl-flex justify-content-xl-center">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="img/odoo-white.svg" alt="Logo" height="30">
+                    </a>
+                    <!-- Burger menu-->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <!-- Menú colapsable -->
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">App</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Docs</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Sign in</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-warning text-dark ms-lg-3" href="#">
+                                    <i class="fa-regular fa-credit-card me-1"></i> Buy now
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <section class="hero row  p-4 p-md-5 d-flex align-items-md-center justify-content-xl-between">
+                <div class="col-12 col-md-6 col-xl-5">
+                    <h1 class="text-white fw-bold">Development done right</h1>
+                    <h4 class="text-white fw-light">Build a beautiful, modern website with flexible components built from scratch.</h4>
+                    <button type="button" class="btn btn-light fw-bold my-2">Get started +</button>    
+                    <div class="mt-4">
+                        <p class="text-white">Trusted by:</p>
+                        <div class="d-flex align-items-center gap-3 flex-wrap">
+                            <img class="img-fluid logo" src="img/google-white.svg">
+                            <img class="img-fluid logo" src="img/spotify-white.svg">
+                            <img class="img-fluid logo" src="img/airbnb-white.svg">
+                            <img class="img-fluid logo" src="img/paypal-white.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-md-block col-xl-5">
+                    <div class="bg-light p-4 custom-radius">
+                        <div class="d-flex justify-content-between mt-2 mb-4 align-items-center">
+                            <h4>Manage cards</h4>
+                            <button class="btn btn-sm btn-outline-secondary fw-bold">Add new</button>
+                        </div>
+                        <div class="credit-card rounded-3 p-3">
+                            <div class="d-flex justify-content-between pb-2">
+                                <img src="img/mastercard.svg" alt="mastercard">
+                                <button class="btn btn-sm bg-mint text-white fw-bold">Active</button>
+                            </div>
+                            <div class="my-2">
+                                <p class="text-white small m-0">CARD NUMBER</p>
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <p class="text-white fs-4 fw-bold">4358</p>
+                                    <p class="text-white fs-4 fw-bold">-</p>
+                                    <p class="text-white fs-4 fw-bold">7421</p>
+                                    <p class="text-white fs-4 fw-bold">-</p>
+                                    <p class="text-white fs-4 fw-bold">9256</p>
+                                    <p class="text-white fs-4 fw-bold">-</p>
+                                    <p class="text-white fs-4 fw-bold">6682</p>
+                                </div>
+                            </div>
+                            <div class="mt-2 mb-4 d-flex justify-content-between">
+                                <div>
+                                    <p class="text-white small m-0">NAME</p>
+                                    <p class="text-white fs-5 fw-bold m-0">John Snow</p>
+                                </div>
+                                <div>
+                                    <p class="text-white small m-0">EXPIRY DATE</p>
+                                    <p class="text-white fs-5 fw-bold m-0">11/23</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-bottom border-3 mt-2 mb-4">
+                            <div class="d-flex justify-content-between gap-3">
+                                <div>
+                                    <p class="fw-bold mb-0">Starbucks</p>
+                                    <p class="text-black-50">Pending - San Francisco, United States</p>
+                                </div>
+                                <p class="fw-bold text-center">$5.50 USD</p>
+                            </div>
+                            <div class="d-flex justify-content-between gap-3">
+                                <div>
+                                    <p class="fw-bold mb-0">Nike Sports</p>
+                                    <p class="text-black-50">Pending - San Francisco, United States</p>
+                                </div>
+                                <p class="fw-bold text-center">$129.00 USD</p>
+                            </div>
+                        </div>
+                        <a href="#" class="link-dashed">View all <i class="fa-solid fa-chevron-right"></i></a>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section class="row p-3 p-md-5 d-flex flex-md-row-reverse align-items-md-center">
+            <div class="col-12 col-md-6">
+                <h5 class="badge rounded-pill bg-warning">Tools</h5>
+                <h2 class="fw-bold">We build for designers and developers</h2>
+                <p class="fw-light">Get components and examples, including tons of variables that will help you grow your business.</p>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="position-relative mt-5 col-lg-11">
+                    <div class="card border-0 shadow-sm rounded-3 p-4">
+                        <h5 class="fw-bold mb-3 w-lg-35">Awesome projects</h5>
+                        <div class="d-flex justify-content-between align-items-center border-bottom border-warning py-2">
+                            <p class="w-lg-35">Create the new logo</p>
+                            <i class="fa-solid fa-angle-right text-warning"></i>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center border-bottom border-warning py-2">
+                            <p>Set up the color palette</p>
+                            <i class="fa-solid fa-angle-right text-warning"></i>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center border-bottom border-warning pt-2">
+                            <p>Wireframe and prototype</p>
+                            <span class="text-muted small">6:50</span>
+                        </div>
+                    </div>
+                    <div class="video-box rounded-3 overflow-hidden bg-white mt-3 mt-lg-0">
+                        <div class="position-relative">
+                            <video class="w-100 rounded-3" src="video/01.mp4"></video>
+                            <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2 shadow-sm">
+                            Play video <i class="fa-regular fa-circle-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features row p-3 p-md-5 d-flex align-items-md-center">
+            <div class="col-12 col-md-6">
+                <h5 class="badge rounded-pill bg-mint">Features</h5>
+                <h3 class="fw-bold">Get components and examples, including tons of variables that will help you grow your business.</h3>
+                <ul class="list-unstyled">
+                    <li class="d-flex">
+                        <i class="fa-solid fa-check rounded-1 me-1"></i>
+                        <p class="text-mint fw-bold">Perfect for modern startups</p>
+                    </li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-check rounded-1 me-1"></i>
+                        <p class="text-mint fw-bold">Fully customizable and scalable</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-6 position-relative">
+                <video class="w-100 rounded-3" src="video/02.mp4" controls></video>
+                <button class="btn btn-sm btn-light position-absolute top-0 end-0 my-2 mx-4">Play video <i class="fa-regular fa-circle-play"></i></button>
+            </div>
+        </section>
+        <section class="tech row p-3 p-md-5 d-flex flex-md-row-reverse d-flex align-items-md-center">
+            <div class="col-12 col-md-6">
+                <h5 class="badge rounded-pill bg-primary">Technology</h5>
+                <h3 class="fw-bold">We use the latest technologies on the market</h3>
+                <p>Get components and examples, including tons of variables that will help you grow your business</p>
+                <a href="#" class="link-primary">See case studies</a>
+            </div>
+            <div class="col-12 col-md-6 row align-items-center">
+                <div class="my-3 col-lg-6">
+                    <div class="border rounded-2">
+                        <img class="w-100" src="img/person_03.jpg">
+                        <div class="p-3 d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <p class="bg-warning initials text-white fw-bold rounded-circle me-3 mb-0">JH</p>
+                                <p class="mb-0">Jimi Hendrix</p>
+                            </div>
+                            <i class="fa-regular fa-heart text-black-50"></i>
+                        </div>
+                    </div>
+                    <div class="border rounded-2 d-flex p-3 my-3 align-items-center">
+                        <i class="fa-solid fa-check rounded-circle circled-icon text-white me-3"></i>
+                        <div>
+                            <p class="fw-bold m-0">300+ components</p>
+                            <p class="m-0">Built to be customized</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="border rounded-2 p-3 text-center">
+                        <div>
+                            <img class="w-25" src="img/airbnb.svg">
+                        </div>
+                        <div class="my-3">
+                            <i class="fa-regular fa-star text-warning"></i>
+                            <i class="fa-regular fa-star text-warning"></i>
+                            <i class="fa-regular fa-star text-warning"></i>
+                            <i class="fa-regular fa-star text-warning"></i>
+                            <i class="fa-regular fa-star text-black-50"></i>
+                        </div>
+                        <p class="fw-bold m-0">4.95 out of 5 stars</p>
+                        <p class="small text-black-50 m-0">From 23 reviews</p>
+                    </div>
+                    <div class="uikit border rounded-2 mt-3 text-center p-3">
+                        <div>
+                            <img class="w-25 rounded-circle" src="img/company_01.png">
+                            <p class="fw-bold my-2">Website UI Kit</p>
+                            <div class="m-2">
+                                <img class="thumb rounded-circle border border-white border-3 ms-1" src="img/person_01.jpg">
+                                <img class="thumb rounded-circle border border-white border-3" src="img/person_01.jpg">
+                                <img class="thumb rounded-circle border border-white border-3" src="img/person_01.jpg">
+                            </div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-link text-black-50 me-3"></i>
+                            <i class="fa-regular fa-share-from-square text-black-50 me-3"></i>
+                            <i class="fa-regular fa-heart text-black-50"></i>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="install row p-3 p-md-5 d-flex align-items-md-center">
+            <div class="col-12 col-md-6">
+                <h5 class="badge rounded-pill bg-warning">Easy to install</h5>
+                <h3 class="fw-bold">Download, install and run</h3>
+                <p>Get components and examples, including tons of variables that will help you grow your business.</p>
+                <div class="d-flex mb-2 gap-4 flex-wrap">
+                    <img class="img-fluid" src="img/App_Store.svg">
+                    <img class="img-fluid" src="img/Google_Play.svg">
+                </div>
+            </div>
+            <div class="col-12 col-md-6 position-relative">
+                <video class="w-100 rounded-3" src="video/01.mp4" controls></video>
+                <button class="btn btn-sm btn-light position-absolute top-0 end-0 my-2 mx-4">Play video <i class="fa-regular fa-circle-play"></i></button>
+            </div>
+        </section>
+        <aside class="p-3 p-md-5 d-block d-lg-flex justify-content-lg-between">
+            <div class="w-100 w-lg-75">
+                <h4 class="text-white fw-bold">Infinite solutions</h4>
+                <p class="text-white">
+                Intuitive markup, powerful and lightning-fast build tools, everything you need to turn your ideas into incredible products.
+                </p>
+            </div>
+            <div class="w-100 w-lg-25 mt-3 mt-lg-0 d-flex justify-content-end align-items-center">
+                <button class="btn btn-light">
+                    Learn more <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </aside>
+        <section class="awards bg-light p-3 p-md-5 m-2">
+            <h5 class="badge rounded-pill bg-primary">Awards</h5>
+            <p>Awards for design, creativity, and innovation on the Internet</p>
+            <div class="container my-4">
+                <div class="card-set row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-xl-5 g-3 justify-content-xl-start">
+                    <div class="col custom-margin">
+                        <div class="card p-3 p-xl-4 text-center h-100">
+                            <div>
+                                <img class="w-25 img-fluid" src="img/airbnb.svg" alt="Airbnb">
+                            </div>
+                            <div class="my-3">
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-black-50"></i>
+                            </div>
+                            <p class="fw-bold m-0">4.95 out of 5 stars</p>
+                            <p class="small text-black-50 m-0">From 23 reviews</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-3 p-xl-4 text-center h-100">
+                            <div>
+                                <img class="w-25" src="img/amazon.svg" alt="Amazon">
+                            </div>
+                            <div class="my-3">
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-black-50"></i>
+                            </div>
+                            <p class="fw-bold m-0">4.95 out of 5 stars</p>
+                            <p class="small text-black-50 m-0">From 23 reviews</p>
+                            <a href="#" class="link-dark fw-bold">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col custom-margin">
+                        <div class="card p-3 p-xl-4 text-center h-100">
+                            <div>
+                                <img class="w-25" src="img/slack.svg" alt="Slack">
+                            </div>
+                            <div class="my-3">
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-black-50"></i>
+                            </div>
+                            <p class="fw-bold m-0">4.95 out of 5 stars</p>
+                            <p class="small text-black-50 m-0">From 23 reviews</p>
+                            <a href="#" class="link-dark fw-bold">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card p-3 p-xl-4 text-center h-100">
+                            <div>
+                                <img class="w-25" src="img/spotify.svg" alt="Spotify">
+                            </div>
+                            <div class="my-3">
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-black-50"></i>
+                            </div>
+                            <p class="fw-bold m-0">4.95 out of 5 stars</p>
+                            <p class="small text-black-50 m-0">From 23 reviews</p>
+                            <a href="#" class="link-dark fw-bold">Learn more</a>
+                        </div>
+                    </div>
+                    <div class="col custom-margin">
+                        <div class="card p-3 p-xl-4 text-center h-100">
+                            <div>
+                                <img class="w-25" src="img/paypal.svg" alt="PayPal">
+                            </div>
+                            <div class="my-3">
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-warning"></i>
+                                <i class="fa-regular fa-star text-black-50"></i>
+                            </div>
+                            <p class="fw-bold m-0">4.95 out of 5 stars</p>
+                            <p class="small text-black-50 m-0">From 23 reviews</p>
+                            <a href="#" class="link-dark fw-bold">Learn more</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="p-3 p-md-5">
+            <h3>Helpful answers</h3>
+            <p>Start building fast, beautiful, and modern-looking websites in no time.</p>
+            <div class="row">
+                <div class="accordion col-12 col-md-6" id="miAccordionLeft">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOneLeft">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneLeft" aria-expanded="false" aria-controls="collapseOneLeft"><i class="fa-regular fa-note-sticky me-2"></i>Which license do I need?</button>
+                        </h2>
+                        <div id="collapseOneLeft" class="accordion-collapse collapse" aria-labelledby="headingOneLeft" data-bs-parent="#miAccordionLeft">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero non sem rhoncus commodo. Duis vel nisi massa. In hendrerit, justo ornare semper aliquet, sapien nulla tincidunt purus, ut maximus dolor nunc id risus. Curabitur elementum libero ipsum. Curabitur lacinia urna eget interdum vehicula.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwoLeft">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoLeft" aria-expanded="false" aria-controls="collapseTwoLeft"><i class="fa-regular fa-circle-question me-2"></i>How do I get access to my database?</button>
+                        </h2>
+                        <div id="collapseTwoLeft" class="accordion-collapse collapse" aria-labelledby="headingTwoLeft" data-bs-parent="#miAccordionLeft">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero non sem rhoncus commodo. Duis vel nisi massa. In hendrerit, justo ornare semper aliquet, sapien nulla tincidunt purus, ut maximus dolor nunc id risus. Curabitur elementum libero ipsum. Curabitur lacinia urna eget interdum vehicula.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThreeLeft">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeLeft" aria-expanded="false" aria-controls="collapseThreeLeft"><i class="fa-regular fa-eye me-2"></i>How do I see previous orders?</button>
+                        </h2>
+                        <div id="collapseThreeLeft" class="accordion-collapse collapse" aria-labelledby="headingThreeLeft" data-bs-parent="#miAccordionLeft">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero non sem rhoncus commodo. Duis vel nisi massa. In hendrerit, justo ornare semper aliquet, sapien nulla tincidunt purus, ut maximus dolor nunc id risus. Curabitur elementum libero ipsum. Curabitur lacinia urna eget interdum vehicula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion col-12 col-md-6" id="miAccordionRight">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOneRight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOneRight" aria-expanded="false" aria-controls="collapseOneRight"><i class="fa-regular fa-note-sticky me-2"></i>Which license do I need?</button>
+                        </h2>
+                        <div id="collapseOneRight" class="accordion-collapse collapse" aria-labelledby="headingOneRight" data-bs-parent="#miAccordionRight">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero non sem rhoncus commodo. Duis vel nisi massa. In hendrerit, justo ornare semper aliquet, sapien nulla tincidunt purus, ut maximus dolor nunc id risus. Curabitur elementum libero ipsum. Curabitur lacinia urna eget interdum vehicula.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwoRight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwoRight" aria-expanded="false" aria-controls="collapseTwoRight"><i class="fa-regular fa-circle-question me-2"></i>How do I get access to my database?</button>
+                        </h2>
+                        <div id="collapseTwoRight" class="accordion-collapse collapse" aria-labelledby="headingTwoRight" data-bs-parent="#miAccordionRight">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero non sem rhoncus commodo. Duis vel nisi massa. In hendrerit, justo ornare semper aliquet, sapien nulla tincidunt purus, ut maximus dolor nunc id risus. Curabitur elementum libero ipsum. Curabitur lacinia urna eget interdum vehicula.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThreeRight">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThreeRight" aria-expanded="false" aria-controls="collapseThreeRight"><i class="fa-regular fa-eye me-2"></i>How do I see previous orders?</button>
+                        </h2>
+                        <div id="collapseThreeRight" class="accordion-collapse collapse" aria-labelledby="headingThreeRight" data-bs-parent="#miAccordionRight">
+                            <div class="accordion-body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet libero non sem rhoncus commodo. Duis vel nisi massa. In hendrerit, justo ornare semper aliquet, sapien nulla tincidunt purus, ut maximus dolor nunc id risus. Curabitur elementum libero ipsum. Curabitur lacinia urna eget interdum vehicula.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="my-2 text-center">
+                <h4>I want to start a new project</h4>
+                <div>
+                    <button type="button" class="btn btn-primary">Get started <i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="btn btn-outline-secondary">Learn more</button>   
+                </div>
+            </div>
+        </section>
+        <footer class="p-3 p-md-5">
+            <div>
+                <div>
+                    <h3 class="text-white">Brilliant solutions for your ideas</h3>
+                    <p class="text-white">Modern-looking websites.</p>
+                </div>
+                <div>
+                    <button class="btn btn-light"><i class="fa-regular fa-file"></i>Documentation</button>  
+                    <button type="button" class="btn btn-primary">Purchase now</button>
+                </div>
+            </div>
+            <div>
+                <div>
+                    <img class="w-25" src="img/odoo-white.svg">
+                    <p class="text-white">Odoo attempts to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.</p>
+                </div>
+                <div>
+                    <div>
+                        <p class="fw-bold text-white">Account</p>
+                    	<a href="#" class="link-light">Profile</a>
+                    	<a href="#" class="link-light">Settings</a>
+                    	<a href="#" class="link-light">Billing</a>
+                    	<a href="#" class="link-light">Notifications</a>
+                    </div>
+                    <div>
+                        <p class="fw-bold text-white">About</p>
+                    	<a href="#" class="link-light">Services</a>
+                    	<a href="#" class="link-light">Pricing</a>
+                    	<a href="#" class="link-light">Contact</a>
+                    	<a href="#" class="link-light">Careers</a>
+                    </div>
+                    <div>
+                        <p class="fw-bold text-white">Company</p>
+                    	<a href="#" class="link-light">Community</a>
+                    	<a href="#" class="link-light">Help center</a>
+                    	<a href="#" class="link-light">Support</a>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <p class="text-white">© Odoo. All rights reserved</p>
+                    </div>
+                    <div>
+                        <a href="#" class="link-light">Terms</a>
+                    	<a href="#" class="link-light">Privacy</a>
+                    	<a href="#" class="link-light">Cookies</a>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
