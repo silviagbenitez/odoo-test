@@ -12152,10 +12152,6 @@ hr {
   --bs-gutter-x: 0;
 }
 
-.dotted-pattern {
-  background-image: url("../img/dotted-line.svg");
-}
-
 @media (min-width: 768px) {
   .card-set {
     justify-content: center;
@@ -12184,6 +12180,50 @@ hr {
   .w-lg-35 {
     width: 35% !important;
   }
+  .dotted-pattern-1, .dotted-pattern-2, .dotted-pattern-3, .dotted-pattern-4 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    display: block;
+    position: absolute;
+    z-index: -5;
+    opacity: 0.5;
+  }
+  .dotted-pattern-1, .dotted-pattern-3 {
+    background-image: url(../img/dotted-line-1.svg);
+  }
+  .dotted-pattern-2, .dotted-pattern-4 {
+    background-image: url(../img/dotted-line-2.svg);
+  }
+  .dotted-pattern-1 {
+    top: -11%;
+    left: 42%;
+  }
+  .dotted-pattern-2 {
+    top: -12%;
+    left: 45.5%;
+  }
+  .dotted-pattern-3 {
+    top: -28%;
+    left: 35%;
+  }
+  .dotted-pattern-4 {
+    bottom: -45%;
+    left: 45.5%;
+  }
+  footer {
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0% 100%);
+  }
+}
+@media (min-width: 1100px) {
+  .dotted-pattern-2 {
+    top: -10%;
+  }
+  .dotted-pattern-4 {
+    bottom: -40%;
+  }
 }
 @media (min-width: 1200px) {
   .custom-margin {
@@ -12191,5 +12231,10 @@ hr {
   }
   .card-set > div {
     height: 210px;
+  }
+}
+@media (min-width: 1262px) {
+  .dotted-pattern-1 {
+    left: 45%;
   }
 }/*# sourceMappingURL=main.css.map */
