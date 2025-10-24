@@ -12,17 +12,17 @@ $circled-icon-font: 28px;
 $feature-icon-size: 20px;
 $feature-icon-padding-x: 4px;
 $feature-icon-padding-y: 1px;
+$transition-fast: 0.2s ease;
+$cursor-pointer: pointer;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 .bg-mint, .features ul i {
   background: $bg-mint;
 }
-
 .text-mint {
   color: $text-mint;
 }
-
 aside, footer, .credit-card {
   background: $aside-bg;
 }
@@ -33,9 +33,7 @@ aside {
 }
 
 .hero {
-  img {
-    width: $hero-img-width;
-  }
+  img { width: $hero-img-width; }
   max-width: 1200px;
 }
 
@@ -77,23 +75,33 @@ aside {
   }
 }
 
+.install a, footer a, .fa-heart, .fa-share-from-square, .fa-link {
+  transition: color $transition-fast,
+  font-size $transition-fast,
+  opacity $transition-fast;
+  cursor: $cursor-pointer;
+}
+
 .install a {
   width: 46%;
-  transition: opacity 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
-
   &:hover {
-    opacity: .9;
-  }
+    opacity: .9; }
 }
 
 footer a {
-  transition: opacity 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
-
   &:hover {
     opacity: .6;
   }
+}
+
+.fa-heart:hover {
+  color: red !important;
+}
+.fa-share-from-square:hover {
+  color: blue !important;
+}
+.fa-link:hover {
+  color: green !important;
 }
 
 .social-media img {
@@ -111,6 +119,7 @@ footer a {
   .accordion-button {
     border: none;
     background: transparent;
+
     &:focus { box-shadow: none; }
 
     &::after {
@@ -120,7 +129,7 @@ footer a {
       color: #000;
       margin-left: auto;
       display: inline-block;
-      transition: transform 0.2s ease, opacity 0.2s ease;
+      transition: transform $transition-fast, opacity $transition-fast;
     }
 
     &:not(.collapsed)::after {
@@ -136,23 +145,14 @@ footer a {
   border-bottom: 1px dashed currentColor;
   padding-bottom: 2px;
 
-  &:hover {
-    border-bottom-style: solid;
-  }
+  &:hover { border-bottom-style: solid; }
 
-  i {
-    font-size: 12px;
-  }
+  i { font-size: 12px; }
 }
 
 .custom-radius {
   border-radius: 1rem 1rem 4rem 1rem;
 }
-
-.tech > .row {
-  --bs-gutter-x: 0;
-}
-
 .faded-border {
   border-bottom: 1px solid;
   border-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0)) 1;
@@ -162,48 +162,42 @@ footer a {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
-.fa-heart {
-  color: gray;
-  transition: color 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
+.card-set {
+  cursor: $cursor-pointer !important;
+}
+
+.card-set > div {
+  cursor: $cursor-pointer !important;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 
   &:hover {
-    color: red !important;
+    opacity: 0.9;
+    transform: scale(1.02);
   }
 }
 
-.fa-share-from-square {
-  color: gray;
-  transition: color 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
-
-  &:hover {
-    color: blue !important;
-  }
+hr {
+  width: 40%;
+  height: 2px;
+  border: none;
+  background: black;
+  opacity: 1;
+}
+.tech > .row {
+  --bs-gutter-x: 0;
 }
 
-.fa-link {
-  color: gray;
-  transition: color 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
-
-  &:hover {
-    color: green !important;
-  }
+.dotted-pattern {
+  background-image: url("../img/dotted-line.svg");
 }
-
 
 @media (min-width: 768px) {
   .card-set {
     justify-content: center;
-
-    img {
-      width: 50% !important;
-    }
+    img { width: 50% !important; }
   }
 }
 
@@ -236,8 +230,7 @@ footer a {
   .custom-margin {
     margin-top: 50px;
   }
-
   .card-set > div {
-    height: 200px;
+    height: 210px;
   }
 }

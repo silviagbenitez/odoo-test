@@ -9,7 +9,6 @@ document.querySelectorAll('.video-container').forEach(container => {
 
   if (!playIcon || !pauseIcon) return;
 
-  // Creamos un span para el texto, así nunca se repite
   let textSpan = button.querySelector('.btn-text');
   if (!textSpan) {
     textSpan = document.createElement('span');

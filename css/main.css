@@ -12036,21 +12036,32 @@ aside {
   font-size: 12px;
 }
 
+.install a, footer a, .fa-heart, .fa-share-from-square, .fa-link {
+  transition: color 0.2s ease, font-size 0.2s ease, opacity 0.2s ease;
+  cursor: pointer;
+}
+
 .install a {
   width: 46%;
-  transition: opacity 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
 }
 .install a:hover {
   opacity: 0.9;
 }
 
-footer a {
-  transition: opacity 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
-}
 footer a:hover {
   opacity: 0.6;
+}
+
+.fa-heart:hover {
+  color: red !important;
+}
+
+.fa-share-from-square:hover {
+  color: blue !important;
+}
+
+.fa-link:hover {
+  color: green !important;
 }
 
 .social-media img {
@@ -12103,10 +12114,6 @@ footer a:hover {
   border-radius: 1rem 1rem 4rem 1rem;
 }
 
-.tech > .row {
-  --bs-gutter-x: 0;
-}
-
 .faded-border {
   border-bottom: 1px solid;
   -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) 1;
@@ -12117,35 +12124,36 @@ footer a:hover {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 15px;
 }
 
-.fa-heart {
-  color: gray;
-  transition: color 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
-}
-.fa-heart:hover {
-  color: red !important;
+.card-set {
+  cursor: pointer !important;
 }
 
-.fa-share-from-square {
-  color: gray;
-  transition: color 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
+.card-set > div {
+  cursor: pointer !important;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
-.fa-share-from-square:hover {
-  color: blue !important;
+.card-set > div:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
 }
 
-.fa-link {
-  color: gray;
-  transition: color 0.2s ease, font-size 0.2s ease;
-  cursor: pointer;
+hr {
+  width: 40%;
+  height: 2px;
+  border: none;
+  background: black;
+  opacity: 1;
 }
-.fa-link:hover {
-  color: green !important;
+
+.tech > .row {
+  --bs-gutter-x: 0;
+}
+
+.dotted-pattern {
+  background-image: url("../img/dotted-line.svg");
 }
 
 @media (min-width: 768px) {
@@ -12182,6 +12190,6 @@ footer a:hover {
     margin-top: 50px;
   }
   .card-set > div {
-    height: 200px;
+    height: 210px;
   }
 }/*# sourceMappingURL=main.css.map */
