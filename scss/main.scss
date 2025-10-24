@@ -16,7 +16,7 @@ $feature-icon-padding-y: 1px;
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-.bg-mint, .features i {
+.bg-mint, .features ul i {
   background: $bg-mint;
 }
 .text-mint {
@@ -59,21 +59,27 @@ aside {
 }
 
 .features {
-  i {
-    width: $feature-icon-size;
-    height: $feature-icon-size;
-    padding: $feature-icon-padding-y $feature-icon-padding-x;
+  ul {
+    i {
+      width: $feature-icon-size;
+      height: $feature-icon-size;
+      padding: $feature-icon-padding-y $feature-icon-padding-x;
 
-    &::before {
-      color: white;
-      margin-top: 10px;
-      font-size: 12px;
+      &::before {
+        color: white;
+        margin-top: 10px;
+        font-size: 12px;
+      }
     }
   }
 }
 
 .install img {
   width: 46%;
+}
+
+.social-media img {
+  width: 28px;
 }
 
 .accordion-item {
@@ -145,6 +151,19 @@ aside {
     right: -8%;
     top: -20%;
   }
+  .initials {
+    width: 40px;
+    height: 40px;
+    padding-top: 8px;
+  }
+  .circled-icon {
+    width: 50px;
+    height: 50px;
+    padding-top: 13px;
+  }
+  .w-lg-35 {
+    width: 35% !important;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -153,9 +172,6 @@ aside {
     width: 70%;
     right: -8%;
     top: -20%;
-  }
-  .w-lg-35 {
-    width: 35% !important;
   }
   .custom-margin {
     margin-top: 50px;
@@ -166,4 +182,18 @@ aside {
   .hero {
     max-width: 1200px;
   }
+  .fixed-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
 }
+.tech > .row {
+  --bs-gutter-x: 0;
+}
+.faded-border {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) 1;
+}
+
