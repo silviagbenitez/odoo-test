@@ -11996,6 +11996,9 @@ aside {
   border-bottom-left-radius: 40px;
 }
 
+.hero {
+  max-width: 1200px;
+}
 .hero img {
   width: 21%;
 }
@@ -12033,8 +12036,21 @@ aside {
   font-size: 12px;
 }
 
-.install img {
+.install a {
   width: 46%;
+  transition: opacity 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+}
+.install a:hover {
+  opacity: 0.9;
+}
+
+footer a {
+  transition: opacity 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+}
+footer a:hover {
+  opacity: 0.6;
 }
 
 .social-media img {
@@ -12064,8 +12080,6 @@ aside {
   margin-left: auto;
   display: inline-block;
   transition: transform 0.2s ease, opacity 0.2s ease;
-  transform: scale(1);
-  opacity: 1;
 }
 .accordion-item .accordion-button:not(.collapsed)::after {
   content: "-";
@@ -12076,22 +12090,62 @@ aside {
 .link-dashed {
   text-decoration: none;
   border-bottom: 1px dashed currentColor;
-  padding-bottom: 2px; /* separa un poco la línea del texto */
+  padding-bottom: 2px;
 }
-
 .link-dashed:hover {
   border-bottom-style: solid;
 }
-
 .link-dashed i {
   font-size: 12px;
 }
 
 .custom-radius {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 4rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 1rem 1rem 4rem 1rem;
+}
+
+.tech > .row {
+  --bs-gutter-x: 0;
+}
+
+.faded-border {
+  border-bottom: 1px solid;
+  -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) 1;
+     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) 1;
+}
+
+.custom-container, .fixed-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fa-heart {
+  color: gray;
+  transition: color 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+}
+.fa-heart:hover {
+  color: red !important;
+}
+
+.fa-share-from-square {
+  color: gray;
+  transition: color 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+}
+.fa-share-from-square:hover {
+  color: blue !important;
+}
+
+.fa-link {
+  color: gray;
+  transition: color 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+}
+.fa-link:hover {
+  color: green !important;
 }
 
 @media (min-width: 768px) {
@@ -12124,34 +12178,10 @@ aside {
   }
 }
 @media (min-width: 1200px) {
-  .video-box {
-    position: absolute;
-    width: 70%;
-    right: -8%;
-    top: -20%;
-  }
   .custom-margin {
     margin-top: 50px;
   }
   .card-set > div {
     height: 200px;
   }
-  .hero {
-    max-width: 1200px;
-  }
-  .fixed-container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
-}
-.tech > .row {
-  --bs-gutter-x: 0;
-}
-
-.faded-border {
-  border-bottom: 1px solid;
-  -o-border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) 1;
-     border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) 1;
 }/*# sourceMappingURL=main.css.map */

@@ -1,4 +1,3 @@
-// Variables
 $btn-padding-y: 1rem;
 $btn-padding-x: 2rem;
 $bg-mint: #5ccaa7;
@@ -19,6 +18,7 @@ $feature-icon-padding-y: 1px;
 .bg-mint, .features ul i {
   background: $bg-mint;
 }
+
 .text-mint {
   color: $text-mint;
 }
@@ -32,8 +32,11 @@ aside {
   border-bottom-left-radius: $aside-radius;
 }
 
-.hero img {
-  width: $hero-img-width;
+.hero {
+  img {
+    width: $hero-img-width;
+  }
+  max-width: 1200px;
 }
 
 .initials {
@@ -74,8 +77,23 @@ aside {
   }
 }
 
-.install img {
+.install a {
   width: 46%;
+  transition: opacity 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .9;
+  }
+}
+
+footer a {
+  transition: opacity 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    opacity: .6;
+  }
 }
 
 .social-media img {
@@ -93,7 +111,6 @@ aside {
   .accordion-button {
     border: none;
     background: transparent;
-
     &:focus { box-shadow: none; }
 
     &::after {
@@ -104,8 +121,6 @@ aside {
       margin-left: auto;
       display: inline-block;
       transition: transform 0.2s ease, opacity 0.2s ease;
-      transform: scale(1);
-      opacity: 1;
     }
 
     &:not(.collapsed)::after {
@@ -119,28 +134,76 @@ aside {
 .link-dashed {
   text-decoration: none;
   border-bottom: 1px dashed currentColor;
-  padding-bottom: 2px; /* separa un poco la línea del texto */
-}
-.link-dashed:hover {
-  border-bottom-style: solid;
-}
-.link-dashed i {
-  font-size: 12px;
+  padding-bottom: 2px;
+
+  &:hover {
+    border-bottom-style: solid;
+  }
+
+  i {
+    font-size: 12px;
+  }
 }
 
 .custom-radius {
-  border-top-left-radius: 1rem;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 4rem;
-  border-bottom-left-radius: 1rem;
+  border-radius: 1rem 1rem 4rem 1rem;
 }
+
+.tech > .row {
+  --bs-gutter-x: 0;
+}
+
+.faded-border {
+  border-bottom: 1px solid;
+  border-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.2), rgba(255,255,255,0)) 1;
+}
+
+.custom-container, .fixed-container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.fa-heart {
+  color: gray;
+  transition: color 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: red !important;
+  }
+}
+
+.fa-share-from-square {
+  color: gray;
+  transition: color 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: blue !important;
+  }
+}
+
+.fa-link {
+  color: gray;
+  transition: color 0.2s ease, font-size 0.2s ease;
+  cursor: pointer;
+
+  &:hover {
+    color: green !important;
+  }
+}
+
 
 @media (min-width: 768px) {
   .card-set {
     justify-content: center;
-  }
-  .card-set img {
-    width: 50% !important;
+
+    img {
+      width: 50% !important;
+    }
   }
 }
 
@@ -151,49 +214,30 @@ aside {
     right: -8%;
     top: -20%;
   }
+
   .initials {
     width: 40px;
     height: 40px;
     padding-top: 8px;
   }
+
   .circled-icon {
     width: 50px;
     height: 50px;
     padding-top: 13px;
   }
+
   .w-lg-35 {
     width: 35% !important;
   }
 }
 
 @media (min-width: 1200px) {
-  .video-box {
-    position: absolute;
-    width: 70%;
-    right: -8%;
-    top: -20%;
-  }
   .custom-margin {
     margin-top: 50px;
   }
+
   .card-set > div {
     height: 200px;
   }
-  .hero {
-    max-width: 1200px;
-  }
-  .fixed-container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-  }
 }
-.tech > .row {
-  --bs-gutter-x: 0;
-}
-.faded-border {
-  border-bottom: 1px solid;
-  border-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0)) 1;
-}
-
